@@ -1,0 +1,11 @@
+.post-box {
+    background-color: rgba(211, 211, 211, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0px;
+}
+
+.post-box img{
+    border-radius: 50%;
+    width: 100px;
+}
