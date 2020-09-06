@@ -29,16 +29,16 @@ const Header = () => {
                 <AppBar position="static">
                     <Toolbar>
                         <Typography variant="h6" className={classes.title}>
-                        <a href="/home">Home</a>
+                          <a href="/home">Home</a>
                         </Typography>
                         <Typography variant="h6" className={classes.title}>
-                        <a href="/profile">Profile</a>
+                          <a href="/profile">Profile</a>
                         </Typography>
                         <Typography variant="h6" className={classes.title}>
-                        <a href="/messages">Message</a>
+                          <a href="/messages">Message</a>
                         </Typography>
                         <Typography variant="h6" className={classes.title}>
-                        <a href="/notification">Notification</a>
+                          <a href="/notifications">Notification</a>
                         </Typography>
                         <Button color="inherit">Login</Button>
                     </Toolbar>

@@ -23,8 +23,6 @@ const Home = () => {
 
     shufflePost(posts);
 
-    console.log(posts);
-
     return (
         <Container>
             {

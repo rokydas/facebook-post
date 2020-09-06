@@ -13,8 +13,7 @@ import {
 } from "react-router-dom";
 import Profile from './Components/Profile/Profile';
 import Messages from './Components/Messages/Messages';
-import Notification from './Notification/Notification';
-
+import Notifications from './Components/Notifications/Notifications';
 
 function App() {
   
@@ -32,8 +31,8 @@ function App() {
           <Route path="/messages">
             <Messages />
           </Route>
-          <Route path="/notification">
-            <Notification />
+          <Route path="/notifications">
+            <Notifications />
           </Route>
           <Route exact path="/">
             <Home />

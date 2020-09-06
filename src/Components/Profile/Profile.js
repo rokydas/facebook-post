@@ -10,7 +10,6 @@ const Profile = () => {
         fetch('https://randomuser.me/api')
         .then(res => res.json())
         .then(data => {
-            console.log(data.results[0])
             const allData = 
             {
                 name: data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last, 
