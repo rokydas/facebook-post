@@ -11,6 +11,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Profile from './Components/Profile/Profile';
+import Messages from './Components/Messages/Messages';
+import Notification from './Notification/Notification';
 
 
 function App() {
@@ -23,6 +26,15 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/messages">
+            <Messages />
+          </Route>
+          <Route path="/notification">
+            <Notification />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
@@ -30,6 +42,9 @@ function App() {
             <PostDetails />
           </Route>
           <Route path="*">
+            <NotFound />
+          </Route>
+          <Route path="/post/*">
             <NotFound />
           </Route>
         </Switch>

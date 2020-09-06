@@ -12,6 +12,19 @@ const Home = () => {
         .then(data => setPosts(data))
     }, [])
 
+    const shufflePost = (posts) => {
+        for (let i = 0; i < posts.length; i++){
+            const random = Math.floor(Math.random() * posts.length);
+            const temp = posts[random];
+            posts[random] = posts[i];
+            posts[i] = temp;
+        }
+    }
+
+    shufflePost(posts);
+
+    console.log(posts);
+
     return (
         <Container>
             {
