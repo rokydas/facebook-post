@@ -1,6 +1,7 @@
 import React from 'react';
 import fakeMessage from '../../fakeMessage/fakeMessage';
 import Message from '../Message/Message';
+import { Container } from '@material-ui/core';
 
 
 const Messages = () => {
@@ -8,12 +9,12 @@ const Messages = () => {
     // console.log(fakeMessage);
 
     return (
-        <div>
+        <Container>
              {
-                 fakeMessage.map(message => <Message message={message}></Message>)
+                 fakeMessage.map(message => <Message key={message.id} message={message}></Message>)
              }
             
-        </div>
+        </Container>
     );
 };
 

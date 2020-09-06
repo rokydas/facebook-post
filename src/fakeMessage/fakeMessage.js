@@ -12,4 +12,15 @@ const fakeMessage =
         {"id": 10, "message": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore dicta ut molestias officia. Harum maxime quibusdam iusto necessitatibus similique rerum, nulla esse quam officia inventore quae placeat dolor, totam veniam molestias corrupti hic minima cupiditate? Blanditiis, asperiores. Quia, reiciendis molestiae, deleniti aspernatur ex vel impedit fugiat, nemo natus mollitia veritatis." }
     ];
 
+    const shufflePost = (fakeMessage) => {
+        for (let i = 0; i < fakeMessage.length; i++){
+            const random = Math.floor(Math.random() * fakeMessage.length);
+            const temp = fakeMessage[random];
+            fakeMessage[random] = fakeMessage[i];
+            fakeMessage[i] = temp;
+        }
+    }
+
+    shufflePost(fakeMessage)
+
 export default fakeMessage;
